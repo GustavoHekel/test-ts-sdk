@@ -101,8 +101,8 @@ exports.ProductsApiAxiosParamCreator = function (configuration) {
                     if (body === null || body === undefined) {
                         throw new base_1.RequiredError('body', 'Required parameter body was null or undefined when calling createProduct.');
                     }
-                    localVarPath = "/products";
-                    localVarUrlObj = new URL(localVarPath, 'https://example.com');
+                    localVarPath = "/character";
+                    localVarUrlObj = new URL(localVarPath, 'https://rickandmortyapi.com/api');
                     if (configuration) {
                         baseOptions = configuration.baseOptions;
                     }
@@ -145,9 +145,9 @@ exports.ProductsApiAxiosParamCreator = function (configuration) {
                     if (productID === null || productID === undefined) {
                         throw new base_1.RequiredError('productID', 'Required parameter productID was null or undefined when calling getProduct.');
                     }
-                    localVarPath = "/products/{productID}"
+                    localVarPath = "/character/{productID}"
                         .replace("{" + "productID" + "}", encodeURIComponent(String(productID)));
-                    localVarUrlObj = new URL(localVarPath, 'https://example.com');
+                    localVarUrlObj = new URL(localVarPath, 'https://rickandmortyapi.com/api');
                     if (configuration) {
                         baseOptions = configuration.baseOptions;
                     }
