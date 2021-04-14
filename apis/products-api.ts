@@ -39,9 +39,9 @@ export const ProductsApiAxiosParamCreator = function (configuration?: Configurat
             if (body === null || body === undefined) {
                 throw new RequiredError('body','Required parameter body was null or undefined when calling createProduct.');
             }
-            const localVarPath = `/products`;
+            const localVarPath = `/character`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
-            const localVarUrlObj = new URL(localVarPath, 'https://example.com');
+            const localVarUrlObj = new URL(localVarPath, 'https://rickandmortyapi.com/api');
             let baseOptions;
             if (configuration) {
                 baseOptions = configuration.baseOptions;
@@ -82,10 +82,10 @@ export const ProductsApiAxiosParamCreator = function (configuration?: Configurat
             if (productID === null || productID === undefined) {
                 throw new RequiredError('productID','Required parameter productID was null or undefined when calling getProduct.');
             }
-            const localVarPath = `/products/{productID}`
+            const localVarPath = `/character/{productID}`
                 .replace(`{${"productID"}}`, encodeURIComponent(String(productID)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
-            const localVarUrlObj = new URL(localVarPath, 'https://example.com');
+            const localVarUrlObj = new URL(localVarPath, 'https://rickandmortyapi.com/api');
             let baseOptions;
             if (configuration) {
                 baseOptions = configuration.baseOptions;
